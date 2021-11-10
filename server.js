@@ -1,8 +1,8 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-app.use(express.static(__dirname + '/dist/angular-project'));
+app.use(express.static(__dirname + '/dist/angularProject'));
 app.get('/*', function(req,res) {
 res.sendFile(path.join(__dirname+
-'/dist/angular-project/index.html'));});
+'/dist/angularProject/index.html'));});
 app.listen(process.env.PORT || 8080);
